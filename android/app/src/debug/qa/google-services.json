@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "663935032340",
+    "project_id": "tm-trapp-qa",
+    "storage_bucket": "tm-trapp-qa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663935032340:android:a2d7960db462979fa8db01",
+        "android_client_info": {
+          "package_name": "com.tradilligence.TradeMantri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663935032340-9ahu6t40vaqrnq6bnojlbi97qchgo3pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2LJcjlFSl45Fb-z2dc7t_Dk5a8eRjDkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663935032340-9ahu6t40vaqrnq6bnojlbi97qchgo3pm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663935032340:android:94ff7c026b15dd07a8db01",
+        "android_client_info": {
+          "package_name": "com.tradilligence.tradeMantriBiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663935032340-9ahu6t40vaqrnq6bnojlbi97qchgo3pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2LJcjlFSl45Fb-z2dc7t_Dk5a8eRjDkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663935032340-9ahu6t40vaqrnq6bnojlbi97qchgo3pm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663935032340:android:4e37b517b679557ba8db01",
+        "android_client_info": {
+          "package_name": "com.tradilligence.tradeMantriDeliveryApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663935032340-9ahu6t40vaqrnq6bnojlbi97qchgo3pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2LJcjlFSl45Fb-z2dc7t_Dk5a8eRjDkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663935032340-9ahu6t40vaqrnq6bnojlbi97qchgo3pm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

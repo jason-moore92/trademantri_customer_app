@@ -1,0 +1,10 @@
+import 'package:flutter/material.dart';
+
+import 'index.dart';
+
+class PaymentLinkListPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return PaymentLinkListView();
+  }
+}

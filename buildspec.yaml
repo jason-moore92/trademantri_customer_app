@@ -1,0 +1,58 @@
+version: 0.2
+
+env:
+  variables:
+    APP_VERSION: default
+    APP_FILE_NAME: Customer_default_qa.aab
+    BUNDLE_TYPE: appbundle
+    BUILD_TYPE: release
+    BUNDLE_EXT: aab
+  exported-variables:
+    - APP_VERSION
+    - APP_FILE_NAME
+    - BUNDLE_TYPE
+    - BUILD_TYPE
+    - BUNDLE_EXT
+
+phases:
+  install:
+    runtime-versions:
+      android: 29
+      java: corretto8
+    commands:
+      - pwd
+  pre_build:
+    commands:
+    - echo Pre Build started on `date`
+    - git clone https://github.com/flutter/flutter.git -b 2.5.1
+    - export PATH="$PATH:`pwd`/flutter/bin"
+    - flutter precache
+    - flutter doctor
+    - YQ_BINARY=yq_linux_amd64
+    - YQ_VERSION=v4.2.1
+    - wget https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/${YQ_BINARY}.tar.gz -O - | tar xz && mv ${YQ_BINARY} /usr/bin/yq
+  build:
+    commands:
+
+    - mkdir -p ./app-signing-keys
+    - JKS_CONTENTS=$(aws secretsmanager get-secret-value --secret-id $JKS_CONTENT)
+    - JKS_CONTENTS_VALUE=$(echo $JKS_CONTENTS | jq -r '.SecretBinary')
+    - echo $JKS_CONTENTS_VALUE | base64 -d > ./app-signing-keys/TradeMantri
+
+    - ENV_CONTENTS=$(aws secretsmanager get-secret-value --secret-id $ENV_NAME)
+    - ENV_CONTENTS_VALUE=$(echo $ENV_CONTENTS | jq -r '.SecretString')
+    - echo $ENV_CONTENTS_VALUE > android/key.properties
+
+    - flutter build ${BUNDLE_TYPE} --target lib/main_$BUILD_ENV.dart --${BUILD_TYPE} --flavor $BUILD_ENV
+    - BUNDLE_EXT=$([ "$BUNDLE_TYPE" == appbundle ] && echo "aab" || echo "apk")
+
+    - mkdir -p outputs/
+
+    - APP_VERSION=$(yq e '.version' pubspec.yaml)
+    - APP_FILE_NAME="Customer_${APP_VERSION}_${BUILD_ENV}_${BUILD_TYPE}.${BUNDLE_EXT}"
+    - mv ./build/app/outputs/bundle/${BUILD_ENV}${BUILD_TYPE^}/app-${BUILD_ENV}-${BUILD_TYPE}.${BUNDLE_EXT} ./outputs/${APP_FILE_NAME}
+
+artifacts:
+  files:
+  - ./outputs/*
+  discard-paths: yes

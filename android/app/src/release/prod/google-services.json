@@ -1,0 +1,137 @@
+{
+  "project_info": {
+    "project_number": "855326318672",
+    "project_id": "user-app-trapp",
+    "storage_bucket": "user-app-trapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855326318672:android:7f118b2c9dfd79de183155",
+        "android_client_info": {
+          "package_name": "com.tradilligence.TradeMantri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855326318672-dsro0e5n413eka30jbpmbnb35iruabat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tradilligence.TradeMantri",
+            "certificate_hash": "5391ce4eee9b262cea960e2ad4ee5c2f099a14f0"
+          }
+        },
+        {
+          "client_id": "855326318672-fajs70ml7hqiqmk651dt1adlt3s6agok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tradilligence.TradeMantri",
+            "certificate_hash": "9d0c7dafb3313c8a6a492f8fcf442b0d162f502e"
+          }
+        },
+        {
+          "client_id": "855326318672-hirlirhgdu3lfk9fikivfne0921teg81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1l1J8LCphO8t8T0gHhjHZoVvaav14J1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855326318672-hirlirhgdu3lfk9fikivfne0921teg81.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855326318672:android:c6b9251dbdbdc8d0183155",
+        "android_client_info": {
+          "package_name": "com.tradilligence.tradeMantriBiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855326318672-0slaug3f14q2tvru7ajlvkk4sh0csmt6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tradilligence.tradeMantriBiz",
+            "certificate_hash": "5391ce4eee9b262cea960e2ad4ee5c2f099a14f0"
+          }
+        },
+        {
+          "client_id": "855326318672-ls6d5dsm6h0vpmg4at31v2ui38c2h0i5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tradilligence.tradeMantriBiz",
+            "certificate_hash": "8d602e093019f9e209e6b2fcb32425fcf8935ab7"
+          }
+        },
+        {
+          "client_id": "855326318672-hirlirhgdu3lfk9fikivfne0921teg81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1l1J8LCphO8t8T0gHhjHZoVvaav14J1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855326318672-hirlirhgdu3lfk9fikivfne0921teg81.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855326318672:android:4d22fdc6391d9106183155",
+        "android_client_info": {
+          "package_name": "com.tradilligence.tradeMantriDeliveryApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855326318672-f62rch94hhs9hmpf3uo051im570ptcie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tradilligence.tradeMantriDeliveryApp",
+            "certificate_hash": "5391ce4eee9b262cea960e2ad4ee5c2f099a14f0"
+          }
+        },
+        {
+          "client_id": "855326318672-hirlirhgdu3lfk9fikivfne0921teg81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1l1J8LCphO8t8T0gHhjHZoVvaav14J1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855326318672-hirlirhgdu3lfk9fikivfne0921teg81.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
